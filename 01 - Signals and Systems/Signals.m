@@ -1,6 +1,5 @@
 % 16/04/2022 - @Abel Pinheiro de Figueiredo
-% This script presents some of the most important 
-% and used signals as well operations
+% This script presents some of the most important and used signals
 
 % Range value
 t = (-5:0.01:5);
@@ -9,7 +8,6 @@ t = (-5:0.01:5);
 % u(t) = 1 if t >= 0 | 0 if t < 0
 u = inline('(t >= 0)', 't');
 unitstep = t>=0;
-
 
 % Unit Impulse function
 % f(t) = 1 if t = 0 | 0 if t != 0
@@ -22,7 +20,6 @@ p = inline('(t >= 0)&(t < 1)', 't');
 
 % Ramp signal
 ramp = t.*unitstep;
-
 
 %TODO sinusoidal signals? Exponential signals?
 
